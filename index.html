@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Chase Website My tailwind css</title>
+    <!-- Google Poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap" rel="stylesheet">
+    <!-- Tailwind Css SCript File -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Css -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Internal Css -->
+    <style>
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="bg-[#0E1133] sticky top-0 z-30">
+        <div class="container mx-auto flex justify-between items-center py-[20px]">
+            <div class="flex justify-between md:justify-between items-center space-x-5 w-full md:w-auto lg:w-auto">
+                <div class="logo">
+                    <img src="./assets/logo-3.png" alt="Logo">
+                </div>
+                <div class="menubar flex justify-end items-center">
+                    <img class="w-1/2 md:hidden lg:hidden cursor-pointer" src="./assets/more.png" alt="">
+                </div>
+                <ul class="space-x-4 hidden md:block lg:block hover:block pr-4">
+                    <a class="text-white font-poppins text-base font-semibold hover:underline " href="#">Home</a>
+                    <a class="text-white font-poppins text-base font-semibold hover:underline " href="#">About</a>
+                    <a class="text-white font-poppins text-base font-semibold hover:underline " href="#">Service </a>
+                    <a class="text-white font-poppins text-base font-semibold hover:underline " href="#">Blog</a>
+                    <a class="text-white font-poppins text-base font-semibold hover:underline " href="#">Contact</a>
+                </ul>
+            </div>
+            <div class="button space-x-3 flex gap-4">
+                <button
+                    class="hidden md:block lg:block text-white text-base font-poppins hover:bg-[#EF4444] border-2 border-[#EF4444] duration-300 py-3 px-7 rounded-[8px]">Login</button>
+                <button
+                    class="hidden lg:block py-3 px-5 text-white text-base font-poppins font-medium rounded-[8px] hover:bg-[#EF4444] border-2 border-[#EF4444] duration-300">Get
+                    Started</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="bg-[#12174e] h-[80vh] lg:h-[100vh] flex flex-col justify-center items-center relative px-4">
+            <div class="space-y-5 text-center">
+                <h1
+                    class="font-poppins text-3xl md:text-7xl font-semibold text-white opacity-95 pt-[50px] lg:pt-[100px]">
+                    Creative Way to <br>
+                    Showcase you are <span class="text-[#EF4444]">App</span> </h1>
+                <p class="text-xl font-poppins text-white opacity-70">You are app gets maximum attention and gets more
+                    and
+                    more downloads</p>
+
+                <div
+                    class="pb-[50px] lg:pt-[100px] button flex flex-col-reverse lg:flex-row justify-center items-center gap-4">
+                    <button
+                        class="py-3 px-5 text-white text-base font-poppins font-medium rounded-[8px] bg-[#EF4444] hover:bg-transparent border-2 border-[#EF4444] duration-300">
+                        Get a Quote
+                    </button>
+                    <button class="flex justify-center items-center gap-3 text-xl font-semibold text-white opacity-95">
+                        <img src="./assets/play-button.png" alt="">Play Video
+                    </button>
+                </div>
+            </div>
+            <div class="gallery absolute top-[90%] mb-[100px]">
+                <img src="./assets/hero-thumb-4.png" alt="">
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
